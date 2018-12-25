@@ -13,7 +13,7 @@ ToDoAreaWidget::ToDoAreaWidget() : ui(new Ui::ToDoAreaWidget)
 
 ToDoAreaWidget::~ToDoAreaWidget()
 {
-    writeToDoInfile(filePath);
+    writeToDoInfile();
 
     for(QList<ToDoWidget*>::iterator it = toDoList.begin();it != toDoList.end(); ++it)
     {
@@ -23,7 +23,7 @@ ToDoAreaWidget::~ToDoAreaWidget()
     delete ui;
 }
 
-void ToDoAreaWidget::writeToDoInfile(QString filePath)
+void ToDoAreaWidget::writeToDoInfile()
 {
     QFile file(filePath);
     if(file.open(QIODevice::WriteOnly))

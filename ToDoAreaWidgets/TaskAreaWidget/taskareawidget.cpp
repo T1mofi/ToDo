@@ -12,7 +12,6 @@ TaskAreaWidget::TaskAreaWidget(QString newFilePath){
     ui->addToDoLayout->addWidget(priorityWidget);
 
     filePath = newFilePath;
-//    readToDoFromfile(filePath);
 }
 
 
@@ -20,7 +19,7 @@ TaskAreaWidget::~TaskAreaWidget(){
     delete priorityWidget;
 }
 
-void TaskAreaWidget::readToDoFromfile(QString filePath)
+void TaskAreaWidget::readToDoFromfile()
 {
     QFile fileIn(filePath);
     if(fileIn.open(QIODevice::ReadOnly))

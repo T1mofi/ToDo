@@ -18,8 +18,8 @@ public:
     explicit ToDoAreaWidget();
     virtual ~ToDoAreaWidget();
 
-    virtual void readToDoFromfile(QString filePath) = 0;
-    void writeToDoInfile(QString filePath);
+    virtual void readToDoFromfile() = 0;
+    void writeToDoInfile();
 
 private slots:
     void on_backButton_clicked();

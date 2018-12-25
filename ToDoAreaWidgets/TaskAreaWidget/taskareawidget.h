@@ -15,7 +15,7 @@ public:
     TaskAreaWidget(QString newFilePath);
     ~TaskAreaWidget() override;
 
-    void readToDoFromfile(QString filePath) override;
+    void readToDoFromfile() override;
 
 private slots:
     void on_addToDoButton_clicked() override;

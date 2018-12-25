@@ -8,7 +8,7 @@ class TomorrowTaskAreaWidget : public TaskAreaWidget
 public:
     TomorrowTaskAreaWidget(QString newFilePath);
 
-    void readToDoFromfile(QString filePath) override;
+    void readToDoFromfile() override;
 
 signals:
     void moveTask(TaskWidget moveTask);

@@ -4,10 +4,9 @@
 TomorrowTaskAreaWidget::TomorrowTaskAreaWidget(QString newFilePath)
 {
     filePath = newFilePath;
-//    readToDoFromfile(filePath);
 }
 
-void TomorrowTaskAreaWidget::readToDoFromfile(QString filePath)
+void TomorrowTaskAreaWidget::readToDoFromfile()
 {
     QFile fileIn(filePath);
     if(fileIn.open(QIODevice::ReadOnly))
