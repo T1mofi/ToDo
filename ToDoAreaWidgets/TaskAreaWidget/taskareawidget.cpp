@@ -5,15 +5,9 @@ TaskAreaWidget::TaskAreaWidget()
 {
     priorityWidget = new PriorityWidget;
     ui->addToDoLayout->addWidget(priorityWidget);
+
+    filePath = "task.bin";
 }
-
-TaskAreaWidget::TaskAreaWidget(QString newFilePath){
-    priorityWidget = new PriorityWidget;
-    ui->addToDoLayout->addWidget(priorityWidget);
-
-    filePath = newFilePath;
-}
-
 
 TaskAreaWidget::~TaskAreaWidget(){
     delete priorityWidget;
@@ -59,7 +53,6 @@ void TaskAreaWidget::on_addToDoButton_clicked()
 
 void TaskAreaWidget::addTaskFromOtherArea(TaskWidget movedTask)
 {
-    qDebug() << "i am into slot add task from other area";
     TaskWidget * tempTask = new TaskWidget(movedTask);
     QObject::connect(tempTask, SIGNAL(deleteToDo(ToDoWidget*)),this, SLOT(on_deleteToDo_clicked(ToDoWidget*)));
 

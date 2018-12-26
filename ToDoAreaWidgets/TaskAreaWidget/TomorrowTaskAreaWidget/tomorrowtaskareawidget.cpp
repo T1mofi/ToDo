@@ -1,9 +1,9 @@
 #include "tomorrowtaskareawidget.h"
 #include "ui_todoareawidget.h"
 
-TomorrowTaskAreaWidget::TomorrowTaskAreaWidget(QString newFilePath)
+TomorrowTaskAreaWidget::TomorrowTaskAreaWidget()
 {
-    filePath = newFilePath;
+    filePath = "tomorrowTask.bin";
 }
 
 void TomorrowTaskAreaWidget::readToDoFromfile()
@@ -28,7 +28,6 @@ void TomorrowTaskAreaWidget::readToDoFromfile()
             else
             {
                 emit moveTask(*tempTask);
-                qDebug() << "i am send signal move task";
                 delete tempTask;
             }
         }

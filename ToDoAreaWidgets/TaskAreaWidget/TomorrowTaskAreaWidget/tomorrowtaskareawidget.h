@@ -6,7 +6,7 @@ class TomorrowTaskAreaWidget : public TaskAreaWidget
 {
     Q_OBJECT
 public:
-    TomorrowTaskAreaWidget(QString newFilePath);
+    TomorrowTaskAreaWidget();
 
     void readToDoFromfile() override;
 

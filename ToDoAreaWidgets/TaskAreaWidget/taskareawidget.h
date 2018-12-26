@@ -12,7 +12,6 @@ class TaskAreaWidget : public ToDoAreaWidget
     Q_OBJECT
 public:
     TaskAreaWidget();
-    TaskAreaWidget(QString newFilePath);
     ~TaskAreaWidget() override;
 
     void readToDoFromfile() override;
