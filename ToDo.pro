@@ -34,7 +34,8 @@ SOURCES += \
     ToDoAreaWidgets/todoareawidget.cpp \
     ToDoAreaWidgets/TaskAreaWidget/taskareawidget.cpp \
     ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.cpp \
-    ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.cpp
+    ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.cpp \
+    ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/somedaytaskareawidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +47,8 @@ HEADERS += \
     ToDoAreaWidgets/todoareawidget.h \
     ToDoAreaWidgets/TaskAreaWidget/taskareawidget.h \
     ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.h \
-    ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h
+    ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h \
+    ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/somedaytaskareawidget.h
 
 FORMS += \
         mainwindow.ui \

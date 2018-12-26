@@ -1,6 +1,4 @@
-#ifndef SOMEDAYTASKWIDGET_H
-#define SOMEDAYTASKWIDGET_H
-
+#pragma once
 #include <QDate>
 #include "ToDoWidgets/TaskWidget/taskwidget.h"
 
@@ -43,4 +41,4 @@ inline QDataStream& operator>>(QDataStream &in, SomeDayTaskWidget& task){
     return  in;
 }
 
-#endif // SOMEDAYTASKWIDGET_H
+

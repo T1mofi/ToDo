@@ -19,11 +19,14 @@ MainWindow::MainWindow(QWidget *parent) :
     tomorrowTaskArea->hide();
     ui->centralWidgetLayout->addWidget(tomorrowTaskArea);
 
-
+    someDayTaskArea = new SomeDayTaskAreaWidget;
+    someDayTaskArea->hide();
+    ui->centralWidgetLayout->addWidget(someDayTaskArea);
 }
 
 MainWindow::~MainWindow()
 {
+    delete someDayTaskArea;
     delete tomorrowTaskArea;
     delete taskArea;
     delete ui;
@@ -37,4 +40,9 @@ void MainWindow::on_doTodayButton_clicked()
 void MainWindow::on_doTomorrowButton_clicked()
 {
     tomorrowTaskArea->show();
+}
+
+void MainWindow::on_doButton_clicked()
+{
+    taskArea->show();
 }
