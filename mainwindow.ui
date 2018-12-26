@@ -71,7 +71,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="doButton">
+          <widget class="QPushButton" name="doSomeDayButton">
            <property name="enabled">
             <bool>true</bool>
            </property>
@@ -88,7 +88,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Do</string>
+            <string>Do someday</string>
            </property>
           </widget>
          </item>

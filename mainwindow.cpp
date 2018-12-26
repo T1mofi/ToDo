@@ -42,7 +42,7 @@ void MainWindow::on_doTomorrowButton_clicked()
     tomorrowTaskArea->show();
 }
 
-void MainWindow::on_doButton_clicked()
+void MainWindow::on_doSomeDayButton_clicked()
 {
-    taskArea->show();
+        someDayTaskArea->show();
 }

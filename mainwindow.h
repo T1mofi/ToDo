@@ -23,9 +23,7 @@ private slots:
 
     void on_doTomorrowButton_clicked();
 
-
-
-    void on_doButton_clicked();
+    void on_doSomeDayButton_clicked();
 
 private:
     Ui::MainWindow *ui;

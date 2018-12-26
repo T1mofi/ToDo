@@ -8,7 +8,7 @@ class SomeDayTaskAreaWidget : public TaskAreaWidget
 public:
     SomeDayTaskAreaWidget();
 
-//private slots:
-//    void on_addToDoButton_clicked() override;
+private slots:
+    void on_addToDoButton_clicked() override;
 };
 
