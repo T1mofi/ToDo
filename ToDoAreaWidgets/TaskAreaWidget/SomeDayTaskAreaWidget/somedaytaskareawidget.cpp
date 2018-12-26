@@ -46,7 +46,6 @@ void SomeDayTaskAreaWidget::readToDoFromfile()
                 if(QDate::currentDate().daysTo(tempTask->getComplitionDate()) == 1)
                 {
                     emit moveTaskToTommorow(*tempTask);
-                    qDebug() << "send to tommorow";
                 }
                 else
                 {

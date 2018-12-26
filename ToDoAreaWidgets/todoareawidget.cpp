@@ -7,8 +7,6 @@ ToDoAreaWidget::ToDoAreaWidget() : ui(new Ui::ToDoAreaWidget)
 
     ui->addToDoFrame->hide();
     ui->ScrollAreaLayout->setAlignment(Qt::AlignTop);       //new ToDo to the top
-
-    filePath = "reserveToDo.bin";
 }
 
 ToDoAreaWidget::~ToDoAreaWidget()
@@ -36,8 +34,8 @@ void ToDoAreaWidget::writeToDoInfile()
                 stream << *(dynamic_cast<TaskWidget*>(*it));                                                  //add try cath
             if(filePath == "someDayTask.bin")
                 stream << *(dynamic_cast<SomeDayTaskWidget*>(*it));
-            if(filePath == "reserveToDo.bin")
-                stream << **it;
+            if(filePath == "idea.bin")
+                stream << *(dynamic_cast<ToDoWidget*>(*it));
         }
 
         if (stream.status() != QDataStream::Ok) {

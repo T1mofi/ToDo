@@ -1,5 +1,8 @@
 #pragma once
 
+#include <QFile>
+#include <QDataStream>
+
 #include <QWidget>
 #include <QList>
 #include <QDebug>

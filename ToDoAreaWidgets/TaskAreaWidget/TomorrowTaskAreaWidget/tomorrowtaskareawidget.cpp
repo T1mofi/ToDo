@@ -38,7 +38,6 @@ void TomorrowTaskAreaWidget::readToDoFromfile()
 
 void TomorrowTaskAreaWidget::addTaskFromSomeDayArea(TaskWidget movedTask)
 {
-    qDebug() << "add from someday";
     TaskWidget * tempTask = new TaskWidget(movedTask);
     tempTask->setCreationDate(QDate::currentDate());
     QObject::connect(tempTask, SIGNAL(deleteToDo(ToDoWidget*)),this, SLOT(on_deleteToDo_clicked(ToDoWidget*)));
