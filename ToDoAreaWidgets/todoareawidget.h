@@ -18,7 +18,7 @@ class ToDoAreaWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit ToDoAreaWidget();
+    ToDoAreaWidget();
     virtual ~ToDoAreaWidget();
 
     virtual void readToDoFromfile() = 0;

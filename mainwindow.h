@@ -1,8 +1,7 @@
 #pragma once
 
 #include <QMainWindow>
-#include "ToDoWidgets/TaskWidget/SomeDayTaskWidget/somedaytaskwidget.h"
-#include "ToDoWidgets/todowidget.h"
+
 #include "ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h"
 #include "ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/somedaytaskareawidget.h"
 #include "ToDoAreaWidgets/IdeaAreaWidget/ideaareawidget.h"
@@ -16,7 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow();
     ~MainWindow();
 
 private slots:

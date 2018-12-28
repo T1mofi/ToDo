@@ -1,7 +1,7 @@
 #include "prioritywidget.h"
 #include "ui_prioritywidget.h"
 
-PriorityWidget::PriorityWidget(QWidget *parent) : QWidget(parent), ui(new Ui::PriorityWidget)
+PriorityWidget::PriorityWidget() : ui(new Ui::PriorityWidget)
 {
     ui->setupUi(this);
 }

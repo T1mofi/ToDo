@@ -12,7 +12,7 @@
 class TaskWidget : public ToDoWidget
 {
 public:
-    explicit TaskWidget(importanceDegree taskImportance = lightly);
+    TaskWidget(importanceDegree taskImportance = lightly);
     TaskWidget(const TaskWidget& other);
     TaskWidget& operator=(const TaskWidget& other);
     ~TaskWidget();

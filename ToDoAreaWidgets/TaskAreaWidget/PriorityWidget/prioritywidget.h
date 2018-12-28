@@ -12,7 +12,7 @@ class PriorityWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit PriorityWidget(QWidget *parent = nullptr);
+    PriorityWidget();
     ~PriorityWidget();
 
     importanceDegree getImportance();

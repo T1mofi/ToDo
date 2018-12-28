@@ -1,5 +1,5 @@
 #pragma once
-#include <QDate>
+
 #include "ToDoWidgets/TaskWidget/taskwidget.h"
 
 class SomeDayTaskWidget : public TaskWidget

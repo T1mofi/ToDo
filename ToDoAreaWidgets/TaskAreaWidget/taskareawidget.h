@@ -1,7 +1,6 @@
 #pragma once
 
-#include <QFile>
-#include <QDataStream>
+
 
 #include "ToDoAreaWidgets/todoareawidget.h"
 #include "PriorityWidget/prioritywidget.h"
