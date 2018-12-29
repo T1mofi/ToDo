@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ToDoAreaWidgets/TaskAreaWidget/taskareawidget.h"
+#include "DateWidget/datewidget.h"
 
 class SomeDayTaskAreaWidget : public TaskAreaWidget
 {
@@ -16,5 +17,7 @@ signals:
 
 private slots:
     void on_addToDoButton_clicked() override;
+private:
+    DateWidget * dateWidget;
 };
 

@@ -2,9 +2,9 @@
 
 Priority::Priority(importanceDegree newImportance) : importance(newImportance)
 {
-    color[lightly] = "background-color: rgb(150, 250, 150);";
-    color[important] = "background-color: rgb(170, 255, 255);";
-    color[veryImportant] = "background-color: rgb(250, 150, 150);";
+    color[lightly] = "background-color: rgb(100, 230, 100);";
+    color[important] = "background-color: rgb(50, 150, 230);";
+    color[veryImportant] = "background-color: rgb(230, 50, 50);";
 }
 
 void Priority::setImportance(importanceDegree newImportance)

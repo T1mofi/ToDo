@@ -43,19 +43,31 @@ MainWindow::~MainWindow()
 void MainWindow::on_doTodayButton_clicked()
 {
     taskArea->show();
+    tomorrowTaskArea->hide();
+    someDayTaskArea->hide();
+    ideaArea->hide();
 }
 
 void MainWindow::on_doTomorrowButton_clicked()
 {
+    taskArea->hide();
     tomorrowTaskArea->show();
+    someDayTaskArea->hide();
+    ideaArea->hide();
 }
 
 void MainWindow::on_doSomeDayButton_clicked()
 {
-        someDayTaskArea->show();
+    taskArea->hide();
+    tomorrowTaskArea->hide();
+    someDayTaskArea->show();
+    ideaArea->hide();
 }
 
 void MainWindow::on_ideasButton_clicked()
 {
+    taskArea->hide();
+    tomorrowTaskArea->hide();
+    someDayTaskArea->hide();
     ideaArea->show();
 }

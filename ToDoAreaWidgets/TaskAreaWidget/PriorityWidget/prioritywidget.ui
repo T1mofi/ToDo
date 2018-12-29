@@ -13,17 +13,43 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QRadioButton" name="lightlyButton">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
+       <verstretch>35</verstretch>
       </sizepolicy>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(150, 250, 150);</string>
+      <string notr="true">background-color: rgb(100, 230, 100);</string>
      </property>
      <property name="text">
       <string>Lightly</string>
@@ -38,8 +64,14 @@
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
+       <verstretch>35</verstretch>
       </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
      </property>
      <property name="sizeIncrement">
       <size>
@@ -49,6 +81,7 @@
      </property>
      <property name="font">
       <font>
+       <pointsize>12</pointsize>
        <kerning>true</kerning>
       </font>
      </property>
@@ -59,7 +92,7 @@
       <number>-1</number>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 255, 255);</string>
+      <string notr="true">background-color: rgb(50, 150, 230);</string>
      </property>
      <property name="text">
       <string>Important</string>
@@ -71,11 +104,22 @@
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
        <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
+       <verstretch>35</verstretch>
       </sizepolicy>
      </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(250, 150, 150);</string>
+      <string notr="true">background-color: rgb(230, 50, 50);</string>
      </property>
      <property name="text">
       <string>VeryImportant</string>

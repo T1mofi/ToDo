@@ -2,7 +2,7 @@
 #include "ui_todowidget.h"
 
 
-SomeDayTaskWidget::SomeDayTaskWidget(importanceDegree taskImportance, const QDate& newComplitionDate) :
+SomeDayTaskWidget::SomeDayTaskWidget(importanceDegree taskImportance, QDate newComplitionDate) :
     TaskWidget(taskImportance), complitionDate(newComplitionDate), dateLabel(new QLabel)
 {
     dateLabel->setText(newComplitionDate.toString("dd/MM/yy"));

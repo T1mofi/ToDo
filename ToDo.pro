@@ -36,7 +36,8 @@ SOURCES += \
     ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.cpp \
     ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.cpp \
     ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/somedaytaskareawidget.cpp \
-    ToDoAreaWidgets/IdeaAreaWidget/ideaareawidget.cpp
+    ToDoAreaWidgets/IdeaAreaWidget/ideaareawidget.cpp \
+    ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/DateWidget/datewidget.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -50,13 +51,15 @@ HEADERS += \
     ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.h \
     ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h \
     ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/somedaytaskareawidget.h \
-    ToDoAreaWidgets/IdeaAreaWidget/ideaareawidget.h
+    ToDoAreaWidgets/IdeaAreaWidget/ideaareawidget.h \
+    ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/DateWidget/datewidget.h
 
 FORMS += \
         mainwindow.ui \
     TodoWidgets/todowidget.ui \
     ToDoAreaWidgets/todoareawidget.ui \
-    ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.ui
+    ToDoAreaWidgets/TaskAreaWidget/PriorityWidget/prioritywidget.ui \
+    ToDoAreaWidgets/TaskAreaWidget/SomeDayTaskAreaWidget/DateWidget/datewidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

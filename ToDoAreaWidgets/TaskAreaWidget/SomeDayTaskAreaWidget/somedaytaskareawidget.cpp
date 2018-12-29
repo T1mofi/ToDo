@@ -4,13 +4,15 @@
 SomeDayTaskAreaWidget::SomeDayTaskAreaWidget()
 {
         filePath = "someDayTask.bin";
+        dateWidget = new DateWidget;
+        ui->addToDoLayout->addWidget(dateWidget);
 }
 
 void SomeDayTaskAreaWidget::on_addToDoButton_clicked()
 {
     if(ui->addToDoLineEdit->text() != "")
     {
-         SomeDayTaskWidget * someTask = new SomeDayTaskWidget(priorityWidget->getImportance());
+         SomeDayTaskWidget * someTask = new SomeDayTaskWidget(priorityWidget->getImportance(),dateWidget->getComplitionDate());
          someTask->setText(ui->addToDoLineEdit->text());
          QObject::connect(someTask, SIGNAL(deleteToDo(ToDoWidget*)),this, SLOT(on_deleteToDo_clicked(ToDoWidget*)));
 

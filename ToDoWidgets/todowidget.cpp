@@ -5,6 +5,7 @@ ToDoWidget::ToDoWidget() : ui(new Ui::ToDoWidget)
 {
     ui->setupUi(this);
     ui->deleteToDoButton->hide();
+    ui->ToDoWidgetFrame->setStyleSheet("background-color: rgb(255, 255, 255);");
 }
 
 ToDoWidget::ToDoWidget(const ToDoWidget& other)
