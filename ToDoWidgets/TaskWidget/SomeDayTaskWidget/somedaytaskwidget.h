@@ -5,11 +5,13 @@
 class SomeDayTaskWidget : public TaskWidget
 {
 public:
-    SomeDayTaskWidget(const QDate& newComplitionDate = QDate::currentDate().addDays(2));
+    SomeDayTaskWidget(importanceDegree taskImportance = lightly,
+                      const QDate& newComplitionDate = QDate::currentDate().addDays(2));
 
     friend inline QDataStream& operator<<(QDataStream &out, const SomeDayTaskWidget& task);
     friend inline QDataStream& operator>>(QDataStream &in, SomeDayTaskWidget& task);
 
+    QDate getComplitionDate();
 private:
     QDate complitionDate;
     QLabel * dateLabel;

@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+            qDebug() << "(int)(QDate::currentDate().daysTo(tempTask->getComplitionDate()))";
 
 //    TaskAreaWidget area("task.bin");
 //    area.show();

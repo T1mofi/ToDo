@@ -35,6 +35,11 @@ void TaskWidget::setPriority(importanceDegree taskImportance){
     ui->ToDoWidgetFrame->setStyleSheet(taskPriority.getImportanceStyle());
 }
 
+void TaskWidget::setCreationDate(QDate newCreationDate)
+{
+    creationDate = newCreationDate;
+}
+
 QDate TaskWidget::getCreationDate()
 {
     return creationDate;

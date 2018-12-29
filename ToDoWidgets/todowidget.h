@@ -13,7 +13,7 @@ class ToDoWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit ToDoWidget(QWidget *parent = nullptr);
+    explicit ToDoWidget();
     explicit ToDoWidget(const ToDoWidget& other);
     ToDoWidget& operator=(const ToDoWidget& other);
     ~ToDoWidget();

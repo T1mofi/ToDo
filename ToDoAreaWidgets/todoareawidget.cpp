@@ -34,6 +34,8 @@ void ToDoAreaWidget::writeToDoInfile()
         for(QList<ToDoWidget*>::iterator it = toDoList.begin(); it != toDoList.end(); it++){
             if(filePath == "task.bin" || filePath == "tomorrowTask.bin")
                 stream << *(dynamic_cast<TaskWidget*>(*it));                                                  //add try cath
+            if(filePath == "someDayTask.bin")
+                stream << *(dynamic_cast<SomeDayTaskWidget*>(*it));
             if(filePath == "reserveToDo.bin")
                 stream << **it;
         }

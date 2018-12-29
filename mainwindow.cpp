@@ -20,6 +20,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->centralWidgetLayout->addWidget(tomorrowTaskArea);
 
     someDayTaskArea = new SomeDayTaskAreaWidget;
+    QObject::connect(someDayTaskArea,SIGNAL(moveTaskToTommorow(TaskWidget)),
+                     tomorrowTaskArea,SLOT(addTaskFromSomeDayArea(TaskWidget)));
+    QObject::connect(someDayTaskArea,SIGNAL(moveTaskToToday(TaskWidget)),
+                     taskArea,SLOT(addTaskFromOtherArea(TaskWidget)));
+
+    someDayTaskArea->readToDoFromfile();
     someDayTaskArea->hide();
     ui->centralWidgetLayout->addWidget(someDayTaskArea);
 }

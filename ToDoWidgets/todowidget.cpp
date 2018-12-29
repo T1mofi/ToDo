@@ -1,7 +1,7 @@
 #include "todowidget.h"
 #include "ui_todowidget.h"
 
-ToDoWidget::ToDoWidget(QWidget *parent) : QWidget(parent), ui(new Ui::ToDoWidget)
+ToDoWidget::ToDoWidget() : ui(new Ui::ToDoWidget)
 {
     ui->setupUi(this);
     ui->deleteToDoButton->hide();

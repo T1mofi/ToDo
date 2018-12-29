@@ -21,6 +21,7 @@ public:
     friend inline QDataStream& operator>>(QDataStream &in, TaskWidget& task);
 
     void setPriority(importanceDegree taskImportance);
+    void setCreationDate(QDate newCreationDate);
     QDate getCreationDate();
 protected:
     QDate creationDate;

@@ -20,7 +20,7 @@ private slots:
     void on_addToDoButton_clicked() override;
     void addTaskFromOtherArea(TaskWidget movedTask);
 
-private:
+protected:
     PriorityWidget * priorityWidget;
 };
 

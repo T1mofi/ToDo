@@ -8,6 +8,12 @@ class SomeDayTaskAreaWidget : public TaskAreaWidget
 public:
     SomeDayTaskAreaWidget();
 
+    void readToDoFromfile() override;
+
+signals:
+    void moveTaskToTommorow(TaskWidget moveTask);
+    void moveTaskToToday(TaskWidget moveTask);
+
 private slots:
     void on_addToDoButton_clicked() override;
 };

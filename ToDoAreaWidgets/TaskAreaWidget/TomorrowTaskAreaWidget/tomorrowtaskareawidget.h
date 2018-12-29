@@ -12,5 +12,7 @@ public:
 
 signals:
     void moveTask(TaskWidget moveTask);
+private slots:
+    void addTaskFromSomeDayArea(TaskWidget movedTask);
 };
 
