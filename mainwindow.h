@@ -1,5 +1,5 @@
 #pragma once
-//some chaneges in file for git testing
+//some chaneges in file for  testing
 #include <QMainWindow>
 
 #include "ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h"
