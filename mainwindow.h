@@ -1,5 +1,5 @@
 #pragma once
-//change in mainwindow.h2
+//change in mainwindow.h
 #include <QMainWindow>
 
 #include "ToDoAreaWidgets/TaskAreaWidget/TomorrowTaskAreaWidget/tomorrowtaskareawidget.h"
